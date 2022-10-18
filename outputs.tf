@@ -1,5 +1,5 @@
 output "pet_name" {
   description = "Random Pet Name"
-  value = random_pet.server.keepers.ami_id
+  value = random_pet.pet1.id
 }
   

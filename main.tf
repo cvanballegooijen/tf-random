@@ -3,6 +3,10 @@
 # selected.
 
 resource "random_pet" "pet1" {
+  keepers = {
+    # Generate a new pet name each time we switch to a new AMI id
+    pet_name = var.pet_name
+  }
 
 }
 
